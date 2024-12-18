@@ -1,0 +1,115 @@
+*{padding: 0; margin: 0;}
+body{background-color: rgb(255, 255, 255); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#pagina{display: flex; flex-direction: column; margin: 0 auto; max-width: 980px;}
+
+header{display: flex; flex-direction: column;}
+
+.Menu{display: flex; flex-direction: row; }
+
+#logo{flex: 1 1 auto; justify-content: center; background: url(Imagenes/templatemo_header.jpg) no-repeat;
+background-size: 250px 240px ; background-position: 10%;}
+
+#titulologo{ width: 100%; text-align: center;}
+
+#imagenlogo{ width: 100%; display: flex;align-items: center;justify-content: center; height: 200px;}
+
+#FotoCentro{flex: 1 1 auto;}
+
+#FotoCentro #jardin{width: 100%; height:250px; display: flex;align-items: center;justify-content: center;}
+
+nav{flex: 1 1 auto; display: flex; justify-content: center; background: url(Imagenes/templatemo_header.jpg) no-repeat;
+background-size: 160px 240px ; background-position: 70%;}
+
+nav ul{ list-style: none;}
+
+nav ul li{ margin-top: 20px;}
+
+a{text-decoration: none; color: orange;}
+
+
+#infoPlantas{display: flex; flex-direction: row; margin-top: 10px; margin-bottom: 10px; background: url(Imagenes/templatemo_service.png) no-repeat;
+}
+
+.Parrafos{display: flex; flex-direction: column;margin-left: 10px; margin-right: 5px;}
+
+.tituloparrafo{display: flex; width: 100%;  height: 100%;font-size: 9px;}
+
+.textoparrafo{display: flex; width: 100%; height: 100%;font-size: 12px;}
+
+#MostarMas{color: dimgray;}
+
+section{display: flex; flex-direction: row; margin-top: 10px; padding-right: 1em;}
+
+/*infoServicio*/
+.infoServicio{display: flex; flex-direction: column; flex: 1 1 auto;
+ background: url(Imagenes/templatemo_body.jpg) no-repeat; background-size: cover; padding-left: 8px; padding-right: 8px;}
+
+
+.infoServicio h1{width: 100%; height: 100%; margin-bottom: 10px; margin-top: 10px;}
+
+.infoServicio img{height: 120px; width: 100%;}
+
+.infoServicio p{width: 100%; height: 100%; margin-top: 10px; font-size: 12px; text-align: justify;}
+
+.infoServicio button{margin-top: 20px;  margin-bottom: 10px; width: 70px; height: 20px; background-color: lightblue; border-radius: 6px;}
+
+/*.infoServiciocentral*/
+
+.infoServiciocentral{display: flex; flex-direction: column; flex: 1 1 auto; width: 100%;
+background: url(Imagenes/templatemo_body.jpg) no-repeat; background-size: cover; padding-left: 8px; padding-right: 8px;}
+
+.infoServiciocentral h1{ margin-top: 10px; padding-bottom: 10px;} 
+
+.infoServiciocentral  img{height: 120px; width: 100%;}
+
+.infoServiciocentral p{font-size: 13px; padding-top: 4em; padding-bottom: 2em; justify-content: left; text-align: left;} 
+
+#textoparrafocentralglobo{background: url(Imagenes/templatemo_testimonial.png) no-repeat; background-size: contain;}
+
+#textoparrafocentralglobo p{font-size: 15px; text-align: justify;}
+
+.infoServiciocentral button{width: 70px; height: 20px; margin-bottom: 10px; background-color: lightblue; border-radius: 6px;}
+
+#botntextocentral{margin-top: -8px;}
+
+/*infoServicioinferior*/
+.infoServicioinferior{display: flex; flex-direction: column; width: 100%; flex: 1 1 auto; padding-left: 10px; padding-right: 10px;}
+
+.infoServicioinferior h1{ margin-top: 10px; padding-bottom: 10px;}
+
+.infoServicioinferior p{font-size: 14px; padding-top: 1em; padding-bottom: 2em; font-style: italic; color: dimgrey; 
+    text-align: justify;}
+
+.infoServicioinferior button{width: 70px; height: 20px; background-color: lightblue; border-radius: 6px;}
+
+/*footer*/
+footer img{width: 100%; height: 60px;}
+
+@media (max-width:800px){
+    .Menu{flex-direction: column;}
+    #logo{flex-direction: row; padding-top: 10px;  background-position: 38%; background-size: 90%;}
+    #imagenlogo{ width: 50%; height: 150px; margin-top: 10px; margin-bottom: -10px; margin-left: 40px;}
+    #titulologo{ width: 100%; text-align: center; margin-top: -50px; margin-bottom: 30px;}
+    #FotoCentro #jardin{width: 60%; height:200px; margin-left: 120px;}
+    nav{background-size: 90% ; background-position: 38%;}
+    ul{display: flex; flex-direction: row;}
+    ul li{padding-right: 25px; padding-bottom: 10px; font-size: 12px;}
+    #infoPlantas{background-size: cover;}
+
+    section{flex-direction: column;}
+    .infoServicio{align-items: center;}
+    .infoServicio h1{text-align: center;}
+    .infoServicio p{text-align: center;}
+    .infoServicio img{width: 50%;}
+
+    .infoServiciocentral {align-items: center;}
+    .infoServiciocentral  h1{text-align: center;}
+    .infoServiciocentral  p{text-align: center;}
+    .infoServiciocentral img{width: 50%;}
+    #textoparrafocentralglobo {background-size: cover; }
+
+    .infoServicioinferior button{margin-bottom: 10px;}
+
+}

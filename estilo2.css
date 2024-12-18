@@ -1,0 +1,103 @@
+*{padding: 0; margin: 0;}
+body{background-color: rgb(255, 255, 255); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+/* pagina contiene toda la "estructura" detro del body*/
+#pagina{border: 2px solid red; display: flex; flex-direction: column; margin: 0 auto; max-width: 980px;}
+
+/*  en el header tengo un div principal el cual contine a otros tres divs 
+    #logo quien cuenta con su titulo e imagen 
+    #FotoCentro quien cuenta con una imagen
+    y un navegador con una lista desordenada con sus items 
+*/
+header{display: flex; flex-direction: row;}
+
+/*logo*/
+#logo{flex: 1 1 auto; justify-content: center; background: url(Imagenes/templatemo_header.jpg) no-repeat;
+background-size: 250px 240px ; background-position: 10%;}
+
+#titulologo{ width: 100%; text-align: center;}
+
+#imagenlogo{ width: 100%; display: flex;align-items: center;justify-content: center; height: 200px;}
+
+/*foto central*/
+#FotoCentro{flex: 1 1 auto;}
+
+#FotoCentro #patio{width: 100%; height:250px; display: flex;align-items: center;justify-content: center; margin-bottom: 8px;}
+
+/*navegador*/
+nav{flex: 1 1 auto; display: flex; justify-content: center; background: url(Imagenes/templatemo_header.jpg) no-repeat;
+background-size: 160px 240px ; background-position: 70%;}
+
+nav ul{ list-style: none;}
+
+nav ul li{ margin-top: 20px;}
+
+a{text-decoration: none; color: orange;}
+
+/*  En el section superior tengo dos divs centralIzquierda y centralDerecha
+    izquierda se encarga de contener al formulario
+    derecha contiene tres divs los cuales guardaran dos fotos cada uno
+*/
+#superior{ display: flex; flex-direction: row; background: url(Imagenes/templatemo_body.jpg) no-repeat;
+    background-size:cover ; padding-bottom: 40px;}
+
+/*centralIzquierda*/
+
+#centralIzquierda{ display: flex; flex-direction: column; flex: 1 1 auto; padding: 1em;}
+
+#centralIzquierda h1, #centralIzquierda h2{margin-top: 10px;}
+
+form{ display: flex; flex-direction: column;}
+
+form label{margin-bottom: 10px; margin-top: 20px;}
+
+form input{height: 30px;}
+
+form #inputmsj{height: 150px; margin-bottom: 10px;}
+
+form button{width: 70px; height: 30px;background-color: lightblue;}
+
+/*centralDerecha*/
+
+#centralDerecha{display: flex; flex-direction: column; flex: 1 1 auto; padding: 1em;}
+
+#centralDerecha h1{margin-top: 48px; margin-bottom: 20px;}
+
+.foto{background: white;display: flex; flex-direction: row; flex: 1 1 auto; }
+
+.foto img{width: 100%; height: 155px; padding: 5px;}
+
+#centralDerecha a{margin-top: 10px; color: blue;}
+
+/*El section inferior tiene 3 divs los logos de facebook y twitter los junte dentro de un div "fyt" porque no
+me acorde como separarlos y no queria que quedaran los 3 logos en forma de fila*/
+
+/*inferior*/
+#inferior{display: flex; flex-direction: row; padding-bottom: 100px; background: url(Imagenes/templatemo_more.jpg) no-repeat;
+    background-size:cover ;}
+
+.inferiorInfo{display: flex; flex-direction: column;flex: 50%; padding-left: 50px;}
+
+.inferiorInfo h1{font-size: 20px; padding: 1em; padding-left: 0.12em;}
+
+.inferiorInfo ul{background: #cce6f4; width: 100%; display: flex;  flex-direction: column;}
+
+.inferiorInfo #fyt{display: flex;  flex-direction: row;}
+
+.inferiorInfo p{text-align: left;}
+
+footer img{margin-top: 10px; width: 100%; height: 60px;}
+
+@media (max-width:800px){
+    header{flex-direction: column;}
+    #logo{flex-direction: row; padding-top: 10px;  background-position: 38%; background-size: 90%;}
+    #imagenlogo{ width: 50%; height: 150px; margin-top: 10px; margin-bottom: -10px; margin-left: 40px;}
+    #titulologo{ width: 100%; text-align: center; margin-top: -50px; margin-bottom: 30px;}
+    #FotoCentro #jardin{width: 60%; height:200px; margin-left: 120px;}
+    nav{background-size: 90% ; background-position: 38%;}
+    ul{display: flex; flex-direction: row;}
+    ul li{padding-right: 25px; padding-bottom: 10px; font-size: 12px;}
+
+    #superior{flex-direction: column;}
+
+    #inferior{flex-direction: column; padding-left: 0; margin-left: 0; justify-content: left;}
+}
